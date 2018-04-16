@@ -1,0 +1,188 @@
+body, html {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+main {
+  border: 0;
+  margin: 10px auto;
+  padding: 0;
+  width: 768px; }
+
+header, footer {
+  background-color: #C4C4C4;
+  height: 90px;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+section {
+  height: 1740px;
+  margin: 10px auto;
+  position: relative; }
+
+.block {
+  background-color: #0f0;
+  position: absolute; }
+
+.a {
+  height: 492px;
+  left: 13px;
+  width: 492px; }
+
+.a, .b {
+  top: 0px; }
+
+.b, .c {
+  height: 241px;
+  width: 241px; }
+
+.b {
+  left: 515px; }
+
+.c {
+  left: 515px;
+  top: 251px; }
+
+.d, .e, .f {
+  height: 155px;
+  top: 502px;
+  width: 241px; }
+
+.d {
+  left: 13px; }
+
+.e {
+  left: 264px; }
+
+.f {
+  left: 514px; }
+
+.g, .h {
+  height: 155px;
+  top: 667px; }
+
+.g {
+  left: 13px;
+  width: 493px; }
+
+.h {
+  left: 514px;
+  width: 241px; }
+
+.i, .k {
+  height: 241px;
+  width: 241px; }
+
+.i, .j {
+  top: 832px; }
+
+.i {
+  left: 13px; }
+
+.j {
+  height: 492px;
+  left: 265px;
+  width: 492px; }
+
+.k {
+  left: 13px;
+  top: 1083px; }
+
+.l, .m {
+  height: 241px;
+  top: 1334px; }
+
+.l {
+  width: 241px;
+  left: 13px; }
+
+.m {
+  width: 492px;
+  left: 264px; }
+
+.n, .o, .p {
+  height: 155px;
+  top: 1585px;
+  width: 241px; }
+
+.n {
+  left: 13px; }
+
+.o {
+  left: 264px; }
+
+.p {
+  left: 515px; }
+
+@media (max-width: 768px) {
+  main, header {
+    margin: 10px auto;
+    width: 320px; }
+
+  section {
+    height: 1201px; }
+
+  .block {
+    background-color: red;
+    left: 0; }
+
+  .j, .i, .k {
+    display: none; }
+
+  .d, .e {
+    top: 0;
+    width: 155px; }
+
+  .e {
+    left: 165px; }
+
+  .g {
+    top: 165px;
+    width: 320px; }
+
+  .f, .h {
+    top: 330px;
+    width: 155px; }
+
+  .h {
+    left: 165px; }
+
+  .a, .b {
+    top: 495px; }
+
+  .a {
+    height: 210.98px;
+    width: 211.15px; }
+
+  .b, .c {
+    height: 102.22px;
+    left: 221.15px;
+    width: 102.22px; }
+
+  .c {
+    top: 606.25px;
+    height: 100px; }
+
+  .m {
+    height: 155px;
+    top: 716px;
+    width: 320px; }
+
+  .o, .p {
+    height: 155px;
+    top: 881px;
+    width: 155px; }
+
+  .p {
+    left: 165px; }
+
+  .l, .n {
+    height: 155px;
+    top: 1046px;
+    width: 155px; }
+
+  .n {
+    left: 165px; } }
+
+/*# sourceMappingURL=idem__test.css.map */

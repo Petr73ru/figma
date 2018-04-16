@@ -1,0 +1,255 @@
+// fonts
+$font-stack   : Helvetica, sans-serif;
+// colors
+$header-color : #f00;
+$block-color  : #0f0;
+$footer-color : #00f;
+$gray-color   : #C4C4C4;
+$primary-color: #030;
+// lines : 768
+$first        : 0px;
+$second       : 502px;
+$third        : 667px;
+$fourth       : 832px;
+$fifth        : 1334px;
+$sixth        : 1585px;
+// sizes
+$main-width   : 768px;
+$first-line__big-square       : 492px;
+$first-line__small-square     : 241px;
+$second-line__rectangle-height: 155px;
+$second-line__rectangle-width : 241px;
+$section_height               : 1740px;
+$third-line__rectangle-width  : 493px;
+$fourth-line__square          : 492px;
+
+// style for a 768px and more width
+
+body, html {
+    border    : 0;
+    margin    : 0;
+    padding   : 0;
+
+}
+main
+{
+    border    : 0;
+    margin    : 10px auto;
+    padding   : 0;
+    width     : $main-width;
+}
+header, footer
+{
+    background-color: $gray-color;
+    height    : 90px;
+    position  : relative;
+    text-align: center;
+    width     : 100%;
+}
+section {
+    height    : $section_height;
+    margin    : 10px auto;
+    position  : relative;
+}
+.block
+{
+    background-color:$block-color;
+    position  : absolute;
+}
+
+// first line
+.a
+{
+    height    : $first-line__big-square;
+    left      : 13px;
+    width     : $first-line__big-square;
+}
+.a, .b {
+    top       : $first;
+}
+.b, .c
+{
+    height    : $first-line__small-square;
+    width     : $first-line__small-square;
+}
+.b {
+    left      : 515px;
+}
+.c
+{
+    left      : 515px;
+    top       : $first+$first-line__small-square+10px;
+
+}
+
+// second line
+.d, .e, .f
+{
+    height    : $second-line__rectangle-height;
+    top       : $second;
+    width     : $second-line__rectangle-width;
+}
+.d {
+    left      : 13px;
+}
+.e
+{
+    left      : 264px;
+}
+.f
+{
+    left      : 514px;
+}
+
+// third line
+.g, .h {
+    height    : $second-line__rectangle-height;
+    top       : $third;
+}
+.g {
+    left      : 13px;
+    width     : $third_line__rectangle-width;
+}
+.h {
+    left      : 514px;
+    width     : $second-line__rectangle-width;
+}
+
+// fourth line
+.i, .k {
+    height    : $first-line__small-square;
+    width     : $first-line__small-square;
+}
+.i, .j {
+    top       : $fourth;
+}
+.i {
+    left      : 13px;
+
+}
+.j {
+    height    : $fourth-line__square;
+    left      : 265px;
+    width     : $fourth-line__square;
+}
+.k {
+    left      : 13px;
+    top       : $fourth+$first-line__small-square+10px;
+}
+
+// fifth line
+.l, .m {
+    height    : $second-line__rectangle-width;
+    top       : $fifth;
+}
+.l {
+    width     : $second-line__rectangle-width;
+    left      : 13px;
+}
+.m {
+    width     : $first-line__big-square;
+    left      : 264px;
+}
+
+// sixth line
+.n, .o, .p {
+    height    : $second-line__rectangle-height;
+    top       : $sixth;
+    width     : $first-line__small-square;
+}
+.n {
+    left      : 13px;
+}
+.o {
+    left      : 264px;
+}
+.p {
+    left      : 515px;
+}
+
+// style for a width that less than 768px (target : 320px)
+
+@media (max-width:768px)
+{
+    // lines
+    $first              : 0;
+    $second             : 165px;
+    $third              : 330px;
+    $fourth             : 495px;
+    $fifth              : 716px;
+    $sixth              : 881px;
+    $seventh            : 1046px;
+    // sizes
+    $first-line__square : 155px;
+    $rectangle-width    : 320px;
+
+    main, header {
+        margin          : 10px auto;
+        width           : 320px;
+    }
+    section { height    : 1201px; }
+    .block
+    {
+        background-color:red;
+        left            : 0;
+    }
+    .j, .i, .k { display : none; }
+    // first line
+    .d, .e {
+        top       : $first;
+        width     : $first-line__square;
+    }
+    .e{
+        left      : $first-line__square+10px;
+    }
+    // second line
+    .g {
+        top       : $second;
+        width     : $rectangle-width;
+    }
+    // third line
+    .f, .h {
+        top       : $third;
+        width     : $first-line__square;
+    }
+    .h {
+        left      : $first-line__square + 10px;
+    }
+    // fourth line
+    .a, .b {
+        top       : $fourth;
+    }
+    .a {
+        height    : 210.98px;
+        width     : 211.15px;
+    }
+    .b, .c {
+        height    : 102.22px;
+        left      : 211.15px + 10px;
+        width     : 102.22px;
+    }
+    .c {
+         top      : $fourth+102.25px+9px;
+         height   : 100px;
+    }
+    // fifth line
+    .m {
+        height    : $first-line__square;
+        top       : $fifth;
+        width     : $rectangle-width;
+    }
+    // sixth line
+    .o, .p {
+        height    : $first-line__square;
+        top       : $sixth;
+        width     : $first-line__square;
+    }
+    .p { left     : $first-line__square+10px; }
+    // seventh line
+    .l, .n {
+        height    : $first-line__square;
+        top       : $seventh;
+        width     : $first-line__square;
+    }
+    .n { left     : $first-line__square+10px; }
+}
